@@ -18,7 +18,7 @@ urlpatterns=[
     # Customer Provider Search
     path("providers/", views.view_all_providers),
     path("providers/category/<int:id>/", views.search_provider_by_category),
-    path("providers/search/", views.search_provider_by_name),
+    path("providers/search/", views.provider_details),
     path("providers/<int:id>/", views.provider_details),
     path("providers/nearby/", views.nearby_providers),
 
