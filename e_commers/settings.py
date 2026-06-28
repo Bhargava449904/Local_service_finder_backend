@@ -28,7 +28,7 @@ SECRET_KEY = env("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -90,7 +90,7 @@ DATABASES = {
         'USER': env("NAME"),
         'PASSWORD':env("PASSWORD"),
         'HOST':env('HOST'),
-        'PORT':env('PORT'),
+        'PORT':env('DB_PORT'),
 
     }
 }
